@@ -1,10 +1,10 @@
 import pygame
-from generate import Fractal
+from generator import Terrain
 
 pygame.init()
 surface = pygame.display.set_mode((1000, 500))
 
-ps = Fractal((0,250),(1000,250)).get()
+ps = Terrain((0, 250), (1000, 250)).generate()
 ps.sort(key=lambda p: p[0])
 
 
