@@ -1,5 +1,5 @@
 import pygame
-from generator import Terrain
+from terrain import Terrain
 
 pygame.init()
 surface = pygame.display.set_mode((1000, 500))
